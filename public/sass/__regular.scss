@@ -1,0 +1,47 @@
+/*  /////////// REGULAR CSS ///////////// */
+
+.regular {
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 80%),
+    hsl(0, 0%, 93%)
+  );
+  border-radius: 4px;
+  padding: 2rem;
+
+  .inputcontainer {
+    block-size: 6em;
+    inline-size: 20em;
+    transform: translateX(-50%);
+    margin-inline-start: 50%;
+  }
+
+  .loadingdots {
+    block-size: 6em;
+    inline-size: 20em;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+  }
+
+  .image {
+    object-fit: cover;
+  }
+
+  .image-section {
+    block-size: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link,
+  .nopic {
+    color: black;
+    text-align: center;
+  }
+}
+
+#imageLink {
+  margin-block-start: 0.9375rem;
+}

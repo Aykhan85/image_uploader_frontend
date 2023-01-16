@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+html {
+  background: #222;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background: rgba(245, 245, 245, 0);
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.App {
+  font-family: sans-serif;
+  color: white;
+  padding: 0 2em 4em 2em;
+}
+
+/*  /////////// REGULAR CSS ///////////// */
+.regular {
+  background: linear-gradient(to bottom right, #cccccc, #ededed);
+  border-radius: 4px;
+  padding: 2rem;
+}
+.regular .inputcontainer {
+  block-size: 6em;
+  inline-size: 20em;
+  transform: translateX(-50%);
+  margin-inline-start: 50%;
+}
+.regular .loadingdots {
+  block-size: 6em;
+  inline-size: 20em;
+  margin-inline-start: 50%;
+  transform: translateX(-50%);
+}
+.regular .image {
+  object-fit: cover;
+}
+.regular .image-section {
+  block-size: 20em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.regular .link,
+.regular .nopic {
+  color: black;
+  text-align: center;
+}
+
+#imageLink {
+  margin-block-start: 0.9375rem;
+}

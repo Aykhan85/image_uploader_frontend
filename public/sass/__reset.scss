@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+html {
+  background: #222;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background: hsla(0, 0%, 96%, 0);
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.App {
+  font-family: sans-serif;
+  color: hsl(0, 0%, 100%);
+  padding: 0 2em 4em 2em;
+}
