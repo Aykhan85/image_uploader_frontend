@@ -38,8 +38,8 @@ const Image = () => {
                             imageId ?
                                 <>
                                     <div className="imageContainer">
-                                        <img className='image' src={`http://localhost:8080/api/image/${imageId}`} alt='image' />
-                                        <a href={`http://localhost:8080/api/image/${imageId}`} target='_blank' id="imageLink">Show image as fullscreen</a>
+                                        <img className='image' src={`https://image-uploader-api-4ctd.onrender.com/api/image/${imageId}`} alt='image' />
+                                        <a href={`https://image-uploader-api-4ctd.onrender.com//image/${imageId}`} target='_blank' id="imageLink">Show image as fullscreen</a>
                                     </div>
 
                                     <br />
