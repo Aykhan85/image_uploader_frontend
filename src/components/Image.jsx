@@ -58,7 +58,7 @@ const Image = () => {
 
                                     <Form.Group controlId="formFile" className="mb-3" encType='multipart/form-data' >
                                         <Form.Label>Select a file</Form.Label>
-                                        <Form.Control type="file" onChange={handleChange} />
+                                        <Form.Control type="file" onChange={handleChange} name="image" />
                                         <Button className="mt-3" disabled={!canSave} onClick={handleClick}>Submit</Button>
                                     </Form.Group>
 
