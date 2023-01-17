@@ -7,7 +7,7 @@ const initialState = imagesAdapter.getInitialState();
 export const imagesSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getImages: builder.query({
-      query: () => "/",
+      query: () => "/api/image",
       transformResponse: (responseData) => {
         const loadedResponse = responseData.map((image) => {
           image.id = image._id;
@@ -30,7 +30,7 @@ export const imagesSlice = apiSlice.injectEndpoints({
 
     addNewImage: builder.mutation({
       query: (initialData) => ({
-        url: "/upload",
+        url: "/api/image/upload",
         method: "POST",
         body: initialData,
       }),
